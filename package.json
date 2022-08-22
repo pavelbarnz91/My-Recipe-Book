@@ -1,0 +1,39 @@
+{
+  "name": "my-recipe-book",
+  "version": "1.0.0",
+  "description": "Приложение, для записи рецептов различных ресторанов и кафе.",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "babel": "babel src -d babelconvert",
+    "lint": "eslint .",
+    "lintfix": "eslint . --fix"
+  },
+  "author": "Pavel Barnz",
+  "license": "ISC",
+  "dependencies": {
+    "core-js": "^3.24.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "@typescript-eslint/eslint-plugin": "^5.33.1",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "css-minimizer-webpack-plugin": "^4.0.0",
+    "eslint": "^8.22.0",
+    "eslint-config-standard-with-typescript": "^22.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.4",
+    "eslint-plugin-promise": "^6.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.1",
+    "terser-webpack-plugin": "^5.3.5",
+    "typescript": "^4.7.4",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.10.0",
+    "webpack-merge": "^5.8.0"
+  }
+}
