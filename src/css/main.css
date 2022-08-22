@@ -24,10 +24,11 @@ html, body {
 }
 
 .mrb {
-    width: 100%;
-    min-height: 100vh;
+    width: 80%;
+    height: 30px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border: 1px solid black;
+
+    margin-left: auto;
+    margin-right: auto;
 }
