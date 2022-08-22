@@ -1,0 +1,41 @@
+.login {
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 10px;
+
+    box-sizing: border-box;
+
+    font-size: 40px;
+}
+
+.login__form-inputs {
+    display: block;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+.login__form-input {
+    font-size: 30px;
+
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.login__form-input:focus {
+    outline: none;
+}
+
+.login__form-btns {
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+.login__form-btn {
+    font-size: 25px;
+    background-color: greenyellow;
+
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
