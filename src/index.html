@@ -10,24 +10,30 @@
     <div class="mrb">
 
         <div class="login column-centering">
-            <div class="logo">
-                <img src="./images/logo.png">
+            <div class="logo-box centering">
+                <img class="logo-img" src="./images/logo.png">
             </div>
 
-            <span class="login__title">Войдите или зарегистрируйтесь</span>
+            <span class="login__title">Войдите или Зарегистрируйтесь</span>
 
-            <form class="login__form">
-                <label class="login__form-inputs">
-                    <input class="login__form-input" type="email" placeholder="Email">
-                    <input class="login__form-input" type="password" placeholder="password">
+            <form class="login-form column-centering">
+                <label class="login-form__inputs column-centering">
+                    <input class="login-form__input" type="email" placeholder="Email">
+                    <input class="login-form__input" type="text" placeholder="Пароль">
                 </label>
 
-                <div class="login__form-btns centering">
-                    <button class="login__form-btn" type="button">Вход</button>
+                <div class="login-form__btns">
+                    <button class="login-form__btn" type="button">Вход</button>
                 </div>
             </form>
+
+            <a class="login__link-registr" href="#">Зарегистрироваться</a>
+
+            <div class="login__error">
+                <span class="login__error-message">Аккаунта с таким именем или паролем не существует. Проверьте данные.</span>
+            </div>
         </div>
-        
+
     </div>
 </body>
 </html>

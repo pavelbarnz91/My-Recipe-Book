@@ -1,41 +1,73 @@
 .login {
-    padding: 20px;
+    width: 90%;
+    padding: 2%;
     border: 3px solid black;
     border-radius: 10px;
 
     box-sizing: border-box;
 
-    font-size: 30px;
+    font-size: 1.2em;
 }
 
-.login__form-inputs {
+.logo-img {
+    width: 60%;
+}
+
+.login__title::after {
+    content: "";
     display: block;
-    padding: 10px 0;
-    box-sizing: border-box;
+
+    width: 40%;
+    height: 3px;
+    background-color: black;
+    margin: 5px auto 0;
 }
 
-.login__form-input {
-    font-size: 20px;
+.login-form {
+    padding: 10px 0;
+}
 
-    padding: 5px;
+.login-form__input {
+    font-size: 0.8em;
+    margin-bottom: 10px;
+
+    border: 2px solid black;
     border-radius: 10px;
+
+    padding: 3%;
+}
+.login-form__input:focus {
+    outline: 2px solid greenyellow;
+    border-radius: 10px;
+    border: none;
+}
+
+.login-form__btn {
+    padding: 6px;
+    
+    font-size: 0.8em;
     border: 1px solid black;
-    box-sizing: border-box;
-}
-.login__form-input:focus {
-    outline: none;
-}
-
-.login__form-btns {
-    padding: 10px 0;
-    box-sizing: border-box;
-}
-
-.login__form-btn {
-    font-size: 25px;
-    background-color: greenyellow;
-
-    padding: 5px;
     border-radius: 10px;
+
+    background-color: greenyellow;
+}
+.login-form__btn:active {
+    background-color: green;
+}
+
+.login__link-registr {
+    font-size: 0.7em;
+    color: black;
+}
+
+.login__error {
+    margin: 10px 0;
+
     box-sizing: border-box;
+    border: 2px solid red;
+    border-radius: 10px;
+
+    padding: 2%;
+    font-size: 0.6em;
+    color: red;
 }
