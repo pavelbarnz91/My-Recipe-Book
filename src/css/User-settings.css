@@ -1,0 +1,101 @@
+.mrb__user-settings-wrapper {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.808);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mrb__user-settings {
+    width: 100%;
+    height: 70%;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-settings__avatar-wrapper {
+    width: 100%;
+    height: 30%;
+    border-bottom: 5px solid grey;
+
+    display: flex;
+    justify-content: center;
+
+    background-color: rgb(199, 199, 199);
+}
+
+.user-settings__avatar-box {
+    display: flex;
+    align-items: center;
+}
+
+.user-settings__avatar {
+    width: 8em;
+}
+
+.user-settings__form {
+    width: 100%;
+    padding-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-settings__form-item {
+    width: 60%;
+    border: none;
+    border-bottom: 1px solid black;
+
+    margin-bottom: 20px;
+    font-size: 1.5em;
+
+    text-align: center;
+
+}
+.user-settings__form-item:focus {
+    outline: none;
+}
+
+.user-settings__btn {
+    font-size: 1em;
+
+    padding: 6px;
+    border-radius: 10px;
+    border: 1px solid black;
+
+    background-color: greenyellow;
+}
+.user-settings__btn:active {
+    background-color: green;
+}
+
+.user-settings__create-and-del-account {
+    width: 100%;
+    padding: 15px 15px 0;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+}
+
+.create-account-text {
+    font-size: 0.8em;
+}
+
+.user-settings__del-btn {
+    background: url('../images/delete.png') center/cover no-repeat;
+    width: 18px;
+    height: 21px;
+}

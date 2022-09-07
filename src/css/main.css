@@ -3,6 +3,15 @@
     src: url('../fonts/noto.woff');
 }
 
+@font-face {
+    font-family: 'Veles';
+    src: url('../fonts/Veles.otf');
+}
+
+:root {
+    --modal-window-size: 90%;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -11,11 +20,45 @@ html, body {
     font-family: 'Noto';
 }
 
-.mrb {
+.mrb-wrapper {
     height: 100%;
     width: 100%;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    background: url('../images/keks-1.jpg');
+}
+
+.logo-img {
+    width: 60%;
+}
+
+.title::after {
+    content: "";
+    display: block;
+
+    width: 40%;
+    height: 2px;
+    background-color: black;
+    margin: 3px auto 0;
+}
+
+.mrb__error-box {
+    margin: 10px 0;
+    width: var(--modal-window-size);
+
+    background-color: rgb(240, 240, 240);
+    box-sizing: border-box;
+    border: 2px solid red;
+    border-radius: 10px;
+
+    padding: 2%;
+    font-size: 1em;
+    color: red;
+
+    display: flex;
+    justify-content: center;
 }

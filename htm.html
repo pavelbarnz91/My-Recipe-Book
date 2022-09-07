@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+            <!-- Окно ошибки -->
+            <div class="mrb__error-box hidden" data-mrb="errorBox">
+                <span class="mrb__error-message" data-mrb="errorText"></span>
+            </div>
+    
+            <!-- Окно Приложения -->
+            <div class="mrb hidden" data-mrb="mrb">
+                <header class="mrb-header">
+                    <div class="logo-box">
+                        <img class="header-logo-img" src="./images/logo.png" >
+                    </div>
+    
+                    <div class="mrb-header__user-box">
+                        <div class="user-box__user">
+                            <span class="user-box__user" data-mrb="userName"></span>
+                        </div>
+                        <div class="user-box__user-avatar">
+                            <img class="user-box__user-image" src="./images/user.png" data-mrb="userSettings">
+                        </div>
+                        <div class="user-box__settings">
+                            <img class="user-box__settings-image" src="./images/settings.png">
+                        </div>
+                    </div>
+                </header>
+            </div>
+    
+            <!-- Настройки профиля -->
+            <div class="mrb__user-settings-wrapper hidden">
+    
+                <div class="mrb__user-settings">
+                    <div class="user-settings__avatar-wrapper">
+                        <div class="user-settings__avatar-box">
+                            <img class="user-settings__avatar" src="./images/Avatar.png">
+                        </div>
+                    </div>
+    
+                    <form class="user-settings__form">
+                        <input class="user-settings__form-item" type="text">
+                        <input class="user-settings__form-item" type="text">
+                        <input class="user-settings__form-item" type="text">
+                        <input class="user-settings__form-item" type="password">
+                    </form>
+    
+                    <div class="user-settings__btns">
+                        <button class="user-settings__btn" type="button">Применить</button>
+                        <button class="user-settings__btn" type="button">Отмена</button>
+                    </div>
+    
+                    <div class="user-settings__create-and-del-account">
+                        <span class="create-account-text">Аккаунт создан: <span class="create-account-date">21.08.2022</span></span>
+                        <div class="user-settings__del-btn"></div>
+                    </div>
+                </div>
+            </div>
+</body>
+</html>

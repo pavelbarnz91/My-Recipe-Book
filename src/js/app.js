@@ -1,5 +1,7 @@
-const a = () => {
-  console.log(123)
-}
+import Registration from "./Registration.js";
+import Login from "./Login.js";
+import ProfileSettings from './ProfileSettings.js';
 
-a()
+new Login();
+
+// new ProfileSettings();

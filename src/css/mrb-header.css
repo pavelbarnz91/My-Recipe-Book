@@ -1,0 +1,44 @@
+.mrb {
+    width: 100%;
+    height: inherit;
+}
+
+.mrb-header {
+    width: 100%;
+    height: 5%;
+    background-color: rgba(255, 255, 255, 0.897);
+    border-bottom: 1px solid rgb(243, 182, 163);
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-box__user-avatar, .user-box__user, .user-box__settings {
+    box-sizing: border-box;
+    margin-left: 10px;
+    padding-left: 3px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-box__user-image, .user-box__settings-image {
+    width: 1.5em;
+}
+
+.header-logo-img {
+    width: 8.5em;
+}
+
+.mrb-header__user-box {
+    display: flex;
+    padding-right: 5px;
+}
+
+.user-box__user {
+    font-family: 'Veles';
+    font-size: 1.2em;
+    color: rgb(207, 96, 96);
+}

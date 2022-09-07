@@ -7,33 +7,34 @@
     <title>My Recipe Book</title>
 </head>
 <body>
-    <div class="mrb">
+    <div class="mrb-wrapper" data-mrb="mrbWrapper">
 
-        <div class="login column-centering">
+        <!-- Окно Логина -->
+        <div class="login column-centering" data-loginWindow="loginWindow">
             <div class="logo-box centering">
                 <img class="logo-img" src="./images/logo.png">
             </div>
 
             <span class="login__title">Войдите или Зарегистрируйтесь</span>
 
-            <form class="login-form column-centering">
+            <form class="login-form column-centering" name="loginForm">
                 <label class="login-form__inputs column-centering">
-                    <input class="login-form__input" type="email" placeholder="Email">
-                    <input class="login-form__input" type="text" placeholder="Пароль">
+                    <input class="login-form__input" type="email" placeholder="Email" data-loginWindow="loginInput" name="login">
+                    <input class="login-form__input" type="text" placeholder="Пароль" data-loginWindow="passInput" name="pass">
                 </label>
 
                 <div class="login-form__btns">
-                    <button class="login-form__btn" type="button">Вход</button>
+                    <button class="login-form__btn" type="button" data-loginWindow="enterBtn">Вход</button>
                 </div>
             </form>
 
-            <a class="login__link-registr" href="#">Зарегистрироваться</a>
-
-            <div class="login__error">
-                <span class="login__error-message">Аккаунта с таким именем или паролем не существует. Проверьте данные.</span>
-            </div>
+            <a class="login__link-registr" href="#" data-loginWindow="regBtn">Зарегистрироваться</a>
         </div>
 
+        <!-- Окно ошибки -->
+        <div class="mrb__error-box hidden" data-mrb="errorBox">
+            <span class="mrb__error-message" data-mrb="errorText"></span>
+        </div>
     </div>
 </body>
 </html>
